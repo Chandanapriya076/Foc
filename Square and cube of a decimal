@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+    float number, square,cube;
+    printf("Please Enter any integer Value : ");
+    scanf("%f", &number);
+    square = number * number;
+    printf("square of a given number %.2f is  =  %.2f\n", number, square);
+    cube = number*number*number;
+    printf("\ncube of a given number %.2f is = %.2f",number,cube);
+    return 0;
+}
