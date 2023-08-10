@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    int N, i, inc=1, val=1, temp;
+    printf("Enter the value of N (limit): ");
+    scanf("%d", &N);
+    printf("\n");
+    for(i=1; i<=N; i++)
+    {
+        if(i>1)
+        {
+            inc = inc+2;
+            temp = inc;
+            val = val+temp;
+        }
+        if(i==N)
+            printf("%d", val);
+        else
+            printf("%d, ", val);
+    }
+    getch();
+    return 0;
+}
